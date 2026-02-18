@@ -3,13 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                echo "Fetching code from GitHub..."
-                git 'https://github.com/anuragpm1992-sketch/jenkins-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo "Building application..."
